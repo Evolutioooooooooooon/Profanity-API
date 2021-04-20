@@ -3,7 +3,7 @@
 
 
 # !필수모듈!
-# discord
-# Dtime == 0.1
-# asyncio
-# datetime
+ discord
+ Dtime == 0.1
+ asyncio
+ datetime
