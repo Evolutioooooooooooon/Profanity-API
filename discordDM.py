@@ -6,10 +6,6 @@ from openpyxl.reader.excel import load_workbook
 from openpyxl import load_workbook,workbook
 from Dtime import Uptime
 import os
-client = discord.Client()
-Uptime.uptimeset()
-token = "ODIwMjEwODQxOTAzMzAwNjE4.YEx23w.poCBECdBy70mWX7VAt2AQRLxWJE"
-
 
 @client.event
 async def on_ready():
@@ -85,59 +81,5 @@ async def on_message(message):
         await message.channel.send(f"{number}개의 메세지가 삭제되었습니다.")
 
     #욕감지(Beta)
-    sibal = {"씨부럴","씨부랄","시부럴","시부랄","시\발","씨\발","시벌탱","씨벌탱","씨-","씨*","씨&","씨^","씨%","씨$","씨#","씨@","씨!","시-","시*","시&","시^","시%","시$","시#","시@","시!","씨0","씨9","씨8","씨7","씨6","씨5","씨4","씨3","씨2","시0","시9","시8","시7","시6","시5","시4","시3","시2","쓰발","싶팔","십팔","십발","씹","싸발","야발","싯팔","씻팔", "시부", "씨부", "씨||||", "시||||", "ㅅ||||", "ㅆ||||", "씨||", "시||", "ㅆ||", "ㅅ||","씨이","시이","시발","시벌", "tlqkf", "ㅅㅂ","ㅆㅂ","ㅆ1","ㅆ2","ㅆ12","씨바","씨발","씨벌","씨12","씨1", "ㅅ1ㅂ", "ㅅ12ㅂ", "쉬", "쒸","쉬1", "ㅅ1", "쉬12", "ㅅ12", "시바","시1", "ㅅ ㅂ", "ㅅ  ㅂ", "ㅅ   ㅂ", "ㅅ    ㅂ", "ㅅ     ㅂ"}
-    for i in sibal:
-        if i in message.content:
-            await message.delete()
-            print(f"{message.author}님의 욕설 | ID=1")
-            await message.channel.send(f"<@{message.author.id}> 님의 욕설사용이 적발되었습니다. 욕설 ID=1")
-
-    crazy = {"미친", "미쳤", "미춋", "도라이", "또라이", "미춌","병신","븅신","등신","지랄","죠랄","염병","젠장"}
-    for i in crazy:
-        if i in message.content:
-            await message.delete()
-            print(f"{message.author}님의 욕설 | ID=2")
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다. 욕설 ID=2")
-
-    puppy = {"개색", "개새", "새끼", "새꺄", "개같"}
-    for i in puppy:
-        if i in message.content:
-            await message.delete()
-            print(f"{message.author}님의 욕설 | ID=3")
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다. 욕설 ID=3")
-
-    jot = {"좆", "ㅈ같"}
-    for i in jot:
-        if i in message.content:
-            await message.delete()
-            print(f"{message.author}님의 욕설 | ID=4")
-            await message.delete()
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다. 욕설 ID=4")
  
-    die = {"죽어","뒤져","뒤짐","죽음","쥬금","주금","뒤질","죽고","뒤지","죽을","죽 어","뒤 져","뒤 짐","죽 음","쥬 금","주 금","뒤 질","죽 고","뒤 지","죽 을","죽  어","뒤  져","뒤  짐","죽  음","쥬  금","주  금","뒤  질","죽  고","뒤  지","죽  을", "뒤1","죽1"}
-    for i in die:
-        if i in message.content:
-            print(f"{message.author}님의 욕설 | ID=5")
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다 . 욕설 ID=5")
-
-    susik = {"존나","졸라","쥰내","쥰나"}
-    for i in susik:
-        if i in message.content:
-            await message.delete()
-            print(f"{message.author}님의 욕설 | ID=6")
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다. 욕설 ID=6")
-    
-    Team = {"유니언","Union","스네","스카이네트워크","skynetwork"}
-    for i in Team:
-        if i in message.content:
-            await message.delete()
-            await message.channel.send("그말하면 밴임!!. <@787181025876377620> 참고!! ID=7")
-            print(f"{message.author}님이 금지된 팀 언급!")
-            
-    sex = {'섹스','쎅스','쎅쓰','색스','쌕스','쌕쓰','색쓰','섹쓰','sex','세엑스','쎄엑스','세엑쓰','쎄엑쓰','세엑스으','쎄엑스으','세엑쓰으',"쎄엑쓰으"}
-    for i in sex:
-        if i in messaage.content:
-            await message.delete()
-            await message.channel.send(f"<@{message.author.id}>님의 욕설사용이 적발되었습니다. 욕설 ID=8")
-            
 client.run(token)
