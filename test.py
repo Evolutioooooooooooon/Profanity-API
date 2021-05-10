@@ -1,7 +1,9 @@
 import json
 
-data = open('./badword.json',r)
+data = open('./badword.json','r')
+
+user_data = "시발"
 
 for i in data:
     if i in user_data:
-        return "욕확인"
+        print("욕 확인")
