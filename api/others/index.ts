@@ -1,7 +1,7 @@
 import notFound from './notFound'
-import getRequest from './getRequest'
+import postRequest from './postRequest'
 
 export {
     notFound,
-    getRequest
+    postRequest
 }

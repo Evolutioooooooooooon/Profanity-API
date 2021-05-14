@@ -1,9 +1,9 @@
 import { main, data } from './v1'
-import { notFound, getRequest } from './others'
+import { notFound, postRequest } from './others'
 
 export {
     main,
     data,
     notFound,
-    getRequest
+    postRequest
 }

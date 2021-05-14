@@ -1,11 +1,11 @@
-import express from 'express'
-import { main, data, notFound, getRequest } from '../api'
+import { Router } from 'express'
+import { main, data, notFound, postRequest } from '../api'
 
-const router = express.Router()
+const router = Router()
 
-router.post('/v1/', main)
-router.post('/v1/data', data)
-router.post('*', notFound)
-router.get('*', getRequest)
+router.get('/api/v1/', main)
+router.get('/api/v1/data', data)
+router.get('*', notFound)
+router.post('*', postRequest)
 
 export default router
