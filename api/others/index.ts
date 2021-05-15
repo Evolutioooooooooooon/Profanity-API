@@ -1,7 +1,4 @@
-import notFound from './notFound'
-import postRequest from './postRequest'
+import notFound from "./notFound";
+import postRequest from "./postRequest";
 
-export {
-    notFound,
-    postRequest
-}
+export { notFound, postRequest };

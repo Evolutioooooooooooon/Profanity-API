@@ -1,8 +1,7 @@
-export default function(i: number,data: Array<''>, msg: string) {
-    let including = data[i]
-    if(msg.includes(including)) {
-        return false
-    } else {
-        return true
-    }
+export default function (i: number, data: Array<"">, msg: string) {
+  if (msg.includes(data[i)) {
+    return false;
+  } else {
+    return true;
+  }
 }

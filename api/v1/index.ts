@@ -1,7 +1,4 @@
-import main from './main'
-import data from './data'
+import main from "./main";
+import data from "./data";
 
-export {
-    main,
-    data
-}
+export { main, data };
